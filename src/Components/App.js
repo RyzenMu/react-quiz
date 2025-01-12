@@ -59,7 +59,7 @@ function App() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const res = await fetch("../data/questions.json");
+                const res = await fetch("../data/questions.json/questions");
                 const data = await res.json();
                 dispatch({type: 'dataReceived', payload: data})
             } catch (e) {
